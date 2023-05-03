@@ -7,8 +7,7 @@ import (
 )
 
 func main() {
-	var filename string
-	file, err := os.Open(filename)
+	file, err := os.Open("data/frankenstein.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
